@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>헤더 - 쿠팡(Coupang)</title>
+  <link rel="icon" href="/assets/favicon/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/stylesheets/main.css" />
+  <script src="/js/main.js" defer></script>
+</head>
+
+<body>
+  <div class="Header">
+    <div id="LoginBar">
+      <div id="LoginBarList">
+        <ul class="LoginBarItem1">
+          <li>로그인</li>
+          <li>회원가입</li>
+          <li>고객센터</li>
+        </ul>
+        <ul class="LoginBarItem2">
+          <li>쿠팡플레이</li>
+          <li>제휴마케팅</li>
+        </ul>
+      </div>
+    </div>  
+
+    <div id="GridBox">
+      <button class="button--category">
+        <div id="IconHamburger">
+          <img src ="assets/icon/hamburger.svg">
+        </div>
+        <div id="BtnText">카테고리</div>      
+      </button>
+      
+      <!-- <div id="HeaderInner"> -->
+        <a id="Logo" href ="https://www.coupang.com/" target="_blank" rel="noopener noreferrer">
+        </a>
+      <!-- </div>  -->
+      <div id="Search">
+        <select id="Category">
+          <option value="all">전체</option>
+        </select>
+        <div class="CategoryImg"></div>
+        
+        <input type="search" id="SearchArea" name="SearchArea" required placeholder="찾고 싶은 상품을 검색해 보세요!">
+        <button id="iconMic"></button>
+        <button id="iconSearch"></button>
+      </div>
+      
+      <div class="mycoupangCart">
+        <div id="myCoupang">
+            <button id="myCoupangBtn">
+              <div class="myCoupangText">마이쿠팡</div>
+            </button>
+            <div id="ToolTipList">
+              <ul>
+                <li>주문목록</li>
+                <li>취소/반품</li>
+                <li>찜리스트</li>
+              </ul>
+            </div>
+        </div>
+
+        <!-- <script>
+          const myCoupangBtn = document.querySelector('.myCoupang button');
+          const myCoupangLinks = document.querySelector('.myCoupang ul');
+
+          myCoupangBtn.addEventListener('click', function() {
+            myCoupangLinks.style.display = 'block';
+          });
+        </script> -->
+
+        
+        <div class="cart">
+          <button class="cartBtn">
+              <div id="cartText">장바구니</div>
+              <div id="cartCount">
+                <p>2</p>
+              </div>
+          </button>
+        </div>
+
+      </div>
+
+      <div id="TypeNavigation">
+        <div class="GNB">
+          <img src ="/assets/icon/icon-rocket.svg" alt="로켓배송">
+          로켓배송
+        </div>
+        <div class="GNB">
+          로켓프레시
+          <img src ="/assets/icon/icon-fresh.svg" alt="로켓프레시">
+        </div>
+        <div class="GNB">
+          2022년 설날
+          <img src ="/assets/icon/new.svg" alt="설날">
+        </div>
+        <div class="GNB">로켓직구</div>
+        <div class="GNB">골드박스</div>
+        <div class="GNB">정기배송</div>
+        <div class="GNB">이벤트/쿠폰</div>
+        <div class="GNB">기획전</div>
+        <div class="GNB">여행티켓</div>
+
+      </div>      
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
