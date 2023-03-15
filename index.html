@@ -32,23 +32,24 @@
 
     <div id="GridBox">
       <button class="button--category">
-        <div id="IconHamburger">
-          <img src ="assets/icon/hamburger.svg">
-        </div>
+        <div id="IconHamburger"></div>
         <div id="BtnText">카테고리</div>      
       </button>
       
-      <!-- <div id="HeaderInner"> -->
-        <a id="Logo" href ="https://www.coupang.com/" target="_blank" rel="noopener noreferrer">
+        <a id="Logo" href ="https://www.coupang.com/" target="_blank" rel="noopener noreferrer" aria-label="Coupang">
         </a>
       <!-- </div>  -->
       <div id="Search">
-        <select id="Category">
-          <option value="all">전체</option>
-        </select>
-        <div class="CategoryImg"></div>
-        
-        <input type="search" id="SearchArea" name="SearchArea" required placeholder="찾고 싶은 상품을 검색해 보세요!">
+        <form>
+          <input type="search" id="SearchArea" name="SearchArea" required placeholder="찾고 싶은 상품을 검색해 보세요!">
+          <div class="search-dropdown">
+            <img src="/assets/icon/MoreDown.svg">
+            <select id="Category">
+              <option value="all">전체</option>
+            </select>
+          </div>
+        </form>
+
         <button id="iconMic"></button>
         <button id="iconSearch"></button>
       </div>

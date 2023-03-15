@@ -139,28 +139,22 @@
 
 
 .button--category{
-    position: absolute;
+    position: relative;
     width: 110px;
     height: 116px;
-    /* left: 454px;
-    top: 34px; */
-
-    /* blue/600 */
-    background: #0074E9;
+    background-color: #0074E9;
 
     border-style: none;
-
-
 }
 
-.IconHamburger{
+#IconHamburger{
     position: absolute;
     height: 30px;
     width: 30px;
     left: 40px;
-    top: 20px;
+    top: 30px;
 
-
+    background-image: url("/assets/icon/hamburger.svg");
 }
 
 #BtnText{
@@ -177,19 +171,9 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 120%;
-    /* or 14px */
 
-    /* Grayscale/white/white */
     color: #FFFFFF;
 }
-
-/* .HeaderInner{
-    position: absolute;
-    width: 870px;
-    height: 58px;
-    left: 604px;
-    top: 63px;
-} */
 
 #Logo{
     grid-column: 2 / 3;
@@ -223,6 +207,30 @@
     top: 34px;
 }
 
+form{
+    height: 40px;
+    width: 516px;
+    left: 810px;
+    top: 68px;
+}
+
+.search-dropdown{
+    position: relative;
+    width: 135px;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+}
+
+.search-dropdown img{
+    position: absolute;
+    width: 9px;
+    height: 6px;
+    left: 109px;
+    top: 17px;
+
+    z-index: 1;
+}
 
 #Category{
     position: absolute;
@@ -230,6 +238,7 @@
     height: 40px;
     left: 0px;
     top: 0px;
+    cursor: pointer;
 
 }
 
@@ -259,20 +268,6 @@ select {
 
     /* gray/700 */
     color: #767676;
-}
-
-
-
-.CategoryImg{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    left: 94px;
-    top: 0px;
-
-    background-image: url("/assets/icon/MoreDown.svg");
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 #SearchArea{
@@ -331,15 +326,11 @@ select {
     width: 65px;
     height: 58px;
 
-    /* position: absolute;
-    width: 40px;
-    height: 40px;
-    left: 17px; */
 
     background-image: url("/assets/icon/my-coupang.svg");
     background-repeat: no-repeat;
     background-position: center;
-
+    background-color: transparent;
     border-style: none;
 }
 
@@ -451,7 +442,7 @@ select {
     background-image: url("/assets/icon/cart.svg");
     background-repeat:no-repeat;
     background-position: center;
-
+    background-color: transparent;
     border-style: none;
 }
 
